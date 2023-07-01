@@ -3,15 +3,15 @@
 
 int main()
 {
-    // // Q1 :
-    // int integer;
-    // scanf(" %d", &integer);
-    // (integer % 2 != 0) ? printf("ODD!") : printf("EVEN!");
+    // Q1 :
+    int integer;
+    scanf(" %d", &integer);
+    (integer % 2 != 0) ? printf("ODD!") : printf("EVEN!");
 
-    // // Q2:
-    // int year;
-    // scanf(" %d", &year);
-    // (year % 400 == 0 || year % 100 == 0 || year % 4 == 0) ? printf("Leap Year!") : printf("Not Leap Year!");
+    // Q2:
+    int year;
+    scanf(" %d", &year);
+    (year % 400 == 0 || year % 100 == 0 || year % 4 == 0) ? printf("Leap Year!") : printf("Not Leap Year!");
 
     // Q3:
     int a, b, c;
@@ -63,7 +63,46 @@ int main()
     else if (ascii >= 0 && ascii <= 47 || ascii >= 58 && ascii <= 64 || ascii >= 91 && ascii <= 96 || ascii >= 123 && ascii <= 127)
         printf("%c is a special symbols");
 
-    //Q7 : 
-    
+    //Q7 :
+    int days;
+    float fine;
+    scanf(" %d", &days);
+    if (days < 30)
+    {
+        if (days < 10)
+        {
+            if (days < 6)
+            {
+                fine = 0.50 * days;
+                exit;
+            }
+            fine = 5 * 0.5 + (days - 5) * 1;
+            exit;
+        }
+        fine = 7.5 + 5 * (days - 10);
+    }
+    else if (days > 30)
+        printf("membership is cancelled!");
+
+    printf("Fine : Rupees %f", fine);
+
+    //Q8:
+    int num1, num2;
+    num1 = 3;
+    num2 = 4;
+    int num;
+    scanf(" %d", &num);
+    switch (num)
+    {
+    case 1:
+        printf("addition : %d", num1 + num2);
+        break;
+    case 2:
+        printf("subtraction : %d", num2 - num1);
+        break;
+    default:
+        printf("multiplication : %d", num2 * num1);
+        break;
+    }
     return 0;
 }
