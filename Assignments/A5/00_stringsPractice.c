@@ -43,6 +43,6 @@ int main()
     char name2[] = "is Noob!";
     Xstrcat(name1, name2);
     // printf("\nNew String is : %s", name1);
-    Xstrcmp("Ankur", "Ankuk Soni");
+    Xstrcmp("Ankur", "Ankuk  Soni");
     return 0;
 }
