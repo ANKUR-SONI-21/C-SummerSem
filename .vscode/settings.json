@@ -2,6 +2,7 @@
     "files.associations": {
         "*.ejs": "html",
         "math.h": "c",
-        "random": "c"
+        "random": "c",
+        "stdlib.h": "c"
     }
 }
