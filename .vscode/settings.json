@@ -3,6 +3,8 @@
         "*.ejs": "html",
         "math.h": "c",
         "random": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "fstream": "cpp",
+        "iostream": "cpp"
     }
 }
